@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Variedades de Hamburguesas - La Parrilla</title>
+
+    <link rel="icon" type="image/png" href="../assets/icon/web.icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="../css/style.css"> 
+
+<style>
+    /* *******
+    * APLICACIÓN DE FUENTES Y ESTILOS GENERALES       *
+    *******
+    */
+
+    /* 1. APLICA OPEN SANS AL TEXTO GENERAL */
+    body {
+        font-family: 'Open Sans', Arial, sans-serif !important; /* AÑADIDO !important */
+    }
+    
+    /* 2. APLICA BEBAS NEUE A TÍTULOS Y BOTÓN */
+    .variety-page__wrapper h1,
+    .variety-page__wrapper h2,
+    .button {
+        font-family: 'Bebas Neue', sans-serif !important; /* AÑADIDO !important */
+        letter-spacing: 2px; 
+    }
+
+    /* Estilos generales del contenedor (Fondo oscuro y borde amarillo) */
+    .variety-page__wrapper {
+        background-color: #38312B; 
+        margin: 20px auto;
+        padding: 30px; 
+        border-radius: 12px;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.7); 
+        max-width: 900px; 
+        border: 2px solid #FFD700; 
+        color: #f0f0f0; 
+    }
+    
+    /* TÍTULO PRINCIPAL (H1) */
+    .variety-page__wrapper h1 {
+        color: #FFD700; 
+        text-align: center;
+        font-size: 2.8em;
+        margin-bottom: 20px;
+        padding: 15px 10px; 
+        background-color: #A0522D; 
+        border: 3px solid #F06811; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        border-radius: 5px;
+    }
+
+    /* Párrafo de introducción */
+    .variety-page__wrapper p {
+        color: #f0f0f0; 
+        text-align: justify;
+        margin-bottom: 15px;
+        font-weight: 300; 
+    }
+    
+    /* TÍTULOS DE SECCIÓN (H2) */
+    .variety-page__wrapper h2 {
+        color: white; 
+        text-align: left;
+        background-color: #A0522D; 
+        border-left: 8px solid #A4C639; 
+        padding: 10px 15px; 
+        margin-top: 35px;
+        margin-bottom: 15px;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        font-size: 2.2em; 
+    }
+
+    /* Contenedor de lista (listas ul) */
+    .section__list {
+        list-style: none;
+        padding: 0;
+        margin-top: 15px;
+    }
+
+    /* ESTILO CLAVE: Nombre de la hamburguesa (Palabra Clave amarilla) */
+    .burger-name {
+        font-family: 'Bebas Neue', sans-serif !important; /* AÑADIDO !important */
+        color: #FFD700 !important; 
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-right: 5px;
+        font-size: 1.1em;
+        text-shadow: 0 0 2px rgba(0, 0, 0, 0.8); 
+    }
+    
+    /* Estilos del botón "Volver al Inicio" */
+    .button {
+        display: inline-block;
+        background-color: #F06811; 
+        color: white;
+        padding: 15px 30px;
+        margin-top: 30px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-family: 'Bebas Neue', sans-serif !important; /* MANTENIDO CON !important */
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 1.1em;
+        font-weight: 700;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+        border: 1px solid #FFD700;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .button:hover {
+        background-color: #FFD700; 
+        color: #333;
+    }
+</style>
+
+</head>
+<body>
+    <div class="variety-page__wrapper">
+        
+        <h1>Nuestras Increíbles Variedades de Hamburguesas</h1>  
+        
+        <p>
+            En "La Parrilla", cada hamburguesa es una obra de arte, cocinada a fuego lento en nuestra parrilla de carbón para extraer ese sabor ahumado e inconfundible. Desde los clásicos que te recuerdan a la infancia hasta innovaciones gourmet que desafían el paladar, te invitamos a explorar el menú que define nuestro legado.
+        </p>  
+        
+        <h2>Hamburguesas Clásicas</h2>
+        <p>
+            Perfectas para los amantes de lo tradicional. La simplicidad se une a la calidad inigualable de nuestra carne 100% vacuna, sazonada a la perfección en la parrilla.
+        </p>
+        <ul class="section__list">
+            <li class="section__item" style="background-color: rgba(255, 255, 255, 0.95); color: #111; border-left: 5px solid #F06811; box-shadow: 0 4px 8px rgba(0,0,0,0.3); padding: 15px 20px; border-radius: 6px; margin-bottom: 15px; font-size: 1.05em;">
+                <span class="burger-name">LA CLÁSICA:</span> Carne de res de 180g, lechuga, tomate fresco de estación, cebolla morada en rodajas, pepinillos en vinagre y nuestra exclusiva salsa especial de la casa. Servida en pan de papa. Simplemente perfecta.
+            </li>
+            <li class="section__item" style="background-color: rgba(255, 255, 255, 0.95); color: #111; border-left: 5px solid #F06811; box-shadow: 0 4px 8px rgba(0,0,0,0.3); padding: 15px 20px; border-radius: 6px; margin-bottom: 15px; font-size: 1.05em;">
+                <span class="burger-name">DOBLE QUESO:</span> Dos medallones de carne de 100g cada uno, bañados en doble capa de queso cheddar fundido, cebolla caramelizada lentamente hasta el punto justo de dulzura y un toque de kétchup Heinz. ¡El placer duplicado!
+            </li>
+        </ul>
+
+        <h2>Hamburguesas Gourmet</h2>
+        <p>
+            Para aquellos que buscan una experiencia culinaria más sofisticada. Ingredientes seleccionados y combinaciones atrevidas que elevan el concepto de hamburguesa.
+        </p>
+        <ul class="section__list">
+            <li class="section__item" style="background-color: rgba(255, 255, 255, 0.95); color: #111; border-left: 5px solid #F06811; box-shadow: 0 4px 8px rgba(0,0,0,0.3); padding: 15px 20px; border-radius: 6px; margin-bottom: 15px; font-size: 1.05em;">
+                <span class="burger-name">LA MEDITERRÁNEA:</span> Carne de cordero especiada, queso feta cremoso, aceitunas kalamata, hojas frescas de rúcula y una refrescante salsa de yogur y menta. Una explosión de sabores griegos en cada mordida.
+            </li>
+            <li class="section__item" style="background-color: rgba(255, 255, 255, 0.95); color: #111; border-left: 5px solid #F06811; box-shadow: 0 4px 8px rgba(0,0,0,0.3); padding: 15px 20px; border-radius: 6px; margin-bottom: 15px; font-size: 1.05em;">
+                <span class="burger-name">LA AHUMADA:</span> Carne de res de 200g, queso provolone ahumado derretido, bacon crujiente, aros de cebolla caseros y nuestra salsa BBQ artesanal de la casa. El sabor profundo de la leña en tu plato.
+            </li>
+        </ul>
+
+        <h2>Hamburguesas Especiales de Autor</h2>
+        <p>
+            Nuestras hamburguesas de autor son creaciones únicas, diseñadas por nuestro chef estrella, fusionando cocinas del mundo con técnicas de parrilla.
+        </p>
+        <ul class="section__list">
+            <li class="section__item" style="background-color: rgba(255, 255, 255, 0.95); color: #111; border-left: 5px solid #F06811; box-shadow: 0 4px 8px rgba(0,0,0,0.3); padding: 15px 20px; border-radius: 6px; margin-bottom: 15px; font-size: 1.05em;">
+                <span class="burger-name">LA EXÓTICA:</span> Carne de cerdo marinada en salsa teriyaki casera, coronada con piña asada a la parrilla, cebolla morada encurtida y un suave toque de mayonesa de cilantro. Dulce, salado y ácido en perfecto equilibrio.
+            </li>
+            <li class="section__item" style="background-color: rgba(255, 255, 255, 0.95); color: #111; border-left: 5px solid #F06811; box-shadow: 0 4px 8px rgba(0,0,0,0.3); padding: 15px 20px; border-radius: 6px; margin-bottom: 15px; font-size: 1.05em;">
+                <span class="burger-name">LA FUSIÓN:</span> El medallón de carne de res va relleno de queso azul derretido, acompañado de champiñones salteados al ajo, espinaca fresca y el toque sofisticado de la mayonesa trufada. Un lujo para el paladar.
+            </li>
+        </ul>
+
+        <h2>Opciones Vegetarianas/Veganas</h2>
+        <p>
+            Sabemos que la variedad es clave. Por eso, ofrecemos opciones contundentes y sabrosas que no sacrifican el placer de la buena hamburguesa.
+        </p>
+        <ul class="section__list">
+            <li class="section__item" style="background-color: rgba(255, 255, 255, 0.95); color: #111; border-left: 5px solid #F06811; box-shadow: 0 4px 8px rgba(0,0,0,0.3); padding: 15px 20px; border-radius: 6px; margin-bottom: 15px; font-size: 1.05em;">
+                <span class="burger-name">LA VEGGIE:</span> Patty de lentejas y champiñones casera y crujiente, servida con aguacate fresco laminado, brotes germinados y una ligera salsa de pimiento rojo asado. Una opción llena de sabor y fibra.
+            </li>
+            <li class="section__item" style="background-color: rgba(255, 255, 255, 0.95); color: #111; border-left: 5px solid #F06811; box-shadow: 0 4px 8px rgba(0,0,0,0.3); padding: 15px 20px; border-radius: 6px; margin-bottom: 15px; font-size: 1.05em;">
+                <span class="burger-name">LA VEGANA:</span> Patty de garbanzos y espinacas, queso vegano fundido, tomate confitado y hummus de remolacha. 100% a base de plantas, 100% delicioso.
+            </li>
+        </ul>
+
+        <div style="text-align: center;">
+             <a href="../index.html" class="button">Volver al Inicio</a>
+        </div>
+       
+    </div>
+</body>
+</html>

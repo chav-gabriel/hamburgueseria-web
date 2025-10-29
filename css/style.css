@@ -1,0 +1,238 @@
+/* ========================================================================= */
+/* === General Styles & Variables === */
+/* ========================================================================= */
+
+:root {
+    --color-principal: #A0522D; /* Marrón tierra / Símil carne asada */
+    --color-secundario: #F06811; /* Naranja / Símil brasas */
+    --color-acento: #ADFF2F; /* Verde Limón / Para resaltar */
+    --color-texto-oscuro: #333;
+    --color-texto-claro: white;
+    --color-fondo-claro: #fcfcfc; 
+    --color-gris-suave: #e5e5e5; 
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: var(--color-texto-oscuro);
+    line-height: 1.6;
+    background-color: var(--color-gris-suave); 
+}
+
+/* Tipografía y Links */
+.header_title, .section_heading {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+}
+/* Estilo base de enlaces, usado para las categorías */
+a { text-decoration: none; color: var(--color-principal); transition: color 0.3s ease; }
+a:hover { color: var(--color-secundario); }
+
+/* Utilidad para centrar el contenido */
+.header, .nav, .main, .footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ========================================================================= */
+/* === BLOQUE: Header & Nav === */
+/* ========================================================================= */
+.header { 
+    background-color: var(--color-principal); 
+    color: var(--color-texto-claro); 
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    text-align: center; 
+}
+.header__titles-wrapper { 
+    background-color: var(--color-secundario); 
+    border: 3px solid var(--color-acento); 
+    padding: 10px 20px;
+    margin: 0 auto 15px auto; 
+    max-width: fit-content; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+}
+.header__title { font-size: 3.5em; color: white; margin-bottom: 5px; }
+.header__subtitle { font-size: 1.5em; color: #ffd700; }
+
+.nav { display: flex; justify-content: center; align-items: center; padding-bottom: 10px; }
+.nav__menu { 
+    list-style: none; 
+    display: flex; 
+    gap: 20px; 
+    background-color: var(--color-texto-oscuro); 
+    padding: 10px 15px; 
+    border-radius: 6px; 
+    border: 2px solid var(--color-acento); 
+}
+/* Estilos para los enlaces de navegación */
+.navlink, .nav_link { 
+    padding: 8px 15px; 
+    border-radius: 5px; 
+    font-weight: 600; 
+    text-transform: uppercase; 
+    color: var(--color-acento); 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+.nav_link:hover, .nav_link--active, .navlink:hover, .navlink--active { 
+    background-color: var(--color-secundario); 
+    color: var(--color-texto-claro); 
+}
+.nav__link--external { 
+    color: #FFD700; 
+}
+
+/* ========================================================================= */
+/* === BLOQUE: Main Content Sections (Cuadros Rellenos) === */
+/* ========================================================================= */
+.main { padding-top: 20px; padding-bottom: 40px; }
+
+/* Contenedor de caja (CUADRO RELLENO GRANDE) */
+.section--boxed { 
+    background-color: var(--color-fondo-claro); 
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15); 
+    margin-bottom: 30px; 
+}
+
+/* TÍTULOS DE SECCIÓN: Cuadro de color con texto legible (Blanco) */
+.section__heading {
+    font-size: 2.2em;
+    color: var(--color-texto-claro); 
+    margin-top: 0;
+    margin-bottom: 15px;
+    background-color: var(--color-principal); 
+    padding: 10px 15px;
+    border-radius: 4px;
+    border-left: 8px solid var(--color-acento); 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.section__paragraph { margin-bottom: 15px; text-align: justify; }
+
+/* --- Listas de Categorías --- */
+.section_list--categories { list-style-type: none; padding: 0; margin-top: 15px; } 
+.section_list--categories .section_item { 
+    background-color: var(--color-gris-suave); 
+    color: var(--color-texto-oscuro);
+    padding: 12px;
+    margin-bottom: 10px;
+    border-left: 5px solid var(--color-secundario); 
+    border-radius: 4px; 
+}
+
+/* Estilo para las etiquetas de las categorías (Clásicas, Gourmet, etc.) */
+.item_text--strong { 
+    color: var(--color-principal); 
+    font-weight: bold;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.1em;
+    margin-right: 5px; 
+}
+
+/* --- Listas de Contacto (ESTILO FINAL) --- */
+.section_list--contact { list-style-type: none; padding: 0; } 
+.section_list--contact .section_item { 
+    background-color: var(--color-gris-suave); 
+    padding: 12px; 
+    margin-bottom: 10px;
+    /* Borde lateral Marrón para el estilo de Contacto */
+    border-left: 5px solid var(--color-principal); 
+    border-radius: 4px; 
+}
+
+/* 1. ETIQUETAS Teléfono:, Email: y Dirección: (NARANJA GRUESA) */
+.item_text--accent { 
+    font-weight: bold; 
+    color: var(--color-secundario); /* NARANJA */
+    font-family: 'Bebas Neue', sans-serif; 
+    font-size: 1.1em; 
+}
+
+/* 2. ENLACES (Número de teléfono y Email) - MARRÓN Y SUBRAYADO */
+.section_link { 
+    color: var(--color-principal); /* MARRÓN TIERRA */
+    font-weight: normal; 
+    text-decoration: underline; 
+}
+
+/* ========================================================================= */
+/* === BLOQUE: Galería === */
+/* ========================================================================= */
+.gallery {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+    margin-top: 20px;
+    max-width: 900px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery__item {
+    flex-basis: calc(50% - 10px); 
+    aspect-ratio: 1 / 1; 
+    max-height: 250px; 
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+    width: 100%; 
+}
+
+.gallery__item:hover {
+    transform: scale(1.05);
+}
+
+
+/* ========================================================================= */
+/* === BLOQUE: Footer === */
+/* ========================================================================= */
+
+.footer { 
+    background-color: var(--color-texto-oscuro); 
+    color: var(--color-texto-claro); 
+    text-align: center; 
+    padding: 15px 20px; 
+    font-size: 0.9em; 
+    border-top: 3px solid var(--color-secundario); 
+}
+
+
+/* ========================================================================= */
+/* === Media Query para Responsividad (AJUSTES MÓVILES) === */
+/* ========================================================================= */
+
+@media (max-width: 700px) { 
+    
+    .header__title { font-size: 2.5em; }
+    .header__subtitle { font-size: 1.2em; }
+    
+    .nav__menu { flex-direction: column; gap: 8px; padding: 10px; }
+    .nav_link, .navlink { padding: 8px 15px; font-size: 1em; display: block; }
+
+    .gallery {
+        gap: 8px; 
+        max-width: 100%; 
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 10px; 
+    }
+    .gallery__item {
+        flex-basis: calc(50% - 4px); 
+        max-height: 150px; 
+        aspect-ratio: 1 / 1; 
+    }
+    
+    .section--boxed { padding: 15px; }
+}
