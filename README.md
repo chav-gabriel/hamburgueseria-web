@@ -57,6 +57,3 @@ hamburgueseria-web/
 
 * *chav-gabriel* (@chav-gabriel)
 * *Valentina* (Colaboradora)
-
-* *chav-gabriel* (@chav-gabriel)
-* *Valentina* (Colaboradora)
